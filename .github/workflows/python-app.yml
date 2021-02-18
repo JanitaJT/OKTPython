@@ -27,4 +27,8 @@ jobs:
         pytest
          pip install coverage
         coverage run -m unittest
+    - name: Coverage report
+      run: |
+        coverage report -m
+      
       
