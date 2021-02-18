@@ -27,3 +27,4 @@ jobs:
         pytest
          pip install coverage
         coverage run -m unittest
+        pytest --cache-clear --cov=app test/ > pytest-coverage.txt
